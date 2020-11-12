@@ -6,7 +6,7 @@
 
     <groupId>com.github.RustyPotatoe</groupId>
     <artifactId>SoftEngA1</artifactId>
-    <version>master-SNAPSHOT</version>
+    <version>v1.0</version>
     <packaging>jar</packaging>
 
     <properties>

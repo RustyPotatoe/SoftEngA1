@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Course {
     private String name;
-    private ArrayList<Module> modules;
-    private ArrayList<Student> students;
+    private ArrayList<Module> modules = new ArrayList<Module>();
+    private ArrayList<Student> students = new ArrayList<Student>();
     private DateTime startDate;
     private DateTime endDate;
 

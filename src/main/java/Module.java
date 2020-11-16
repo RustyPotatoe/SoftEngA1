@@ -63,7 +63,7 @@ public class Module {
         String returnString = "";
         for (Student stud: students ) {
             returnString += stud.toString();
-            returnString += "\n\t";
+            returnString += "\n\n";
         }
         return returnString;
     }

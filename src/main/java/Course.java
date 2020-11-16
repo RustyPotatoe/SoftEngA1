@@ -75,7 +75,7 @@ public class Course {
         String returnString = "";
         for (Module mods: modules) {
             returnString += mods.toString();
-            returnString += "\n\t";
+            returnString += "\n\n";
         }
         return returnString;
     }

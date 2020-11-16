@@ -53,18 +53,13 @@ public class Test {
 
     @org.junit.Test
     public void courseValid(){
-        publicRally.addStudent(biden);
-        wallBuilding.addStudent(trump);
         democrat.addModule(publicRally);
-        democrat.addModule(wallBuilding);
         democrat.addStudents(biden);
 
         assertEquals("BA Democrat Nominee", democrat.getName());
         assertEquals(startTime, democrat.getStartDate());
         assertEquals(endTime, democrat.getEndDate());
-        assertEquals(List.of(publicRally,wallBuilding), democrat.getModules());
+        assertEquals(List.of(publicRally), democrat.getModules());
         assertEquals(List.of(biden), democrat.getStudents());
-
-        democrat.toString();
     }
 }

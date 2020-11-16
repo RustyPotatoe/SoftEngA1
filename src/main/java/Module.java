@@ -69,6 +69,6 @@ public class Module {
     }
 
     public String toString(){
-        return "Name: " + getName() + "\nId: " + getId() + "\nStudents: \n\t" + getStudentsToString();
+        return "Name: " + getName() + "\nId: " + getId() + "\nStudents: \n" + getStudentsToString();
     }
 }

@@ -81,6 +81,6 @@ public class Course {
     }
 
     public String toString(){
-        return "Name: " + getName() + "\nStart Date: " + getStartDate() + "\nEnd Date: " + getEndDate() + "\nModules: \n\t" + getModulesToString();
+        return "Name: " + getName() + "\nStart Date: " + getStartDate() + "\nEnd Date: " + getEndDate() + "\nModules: \n" + getModulesToString();
     }
 }

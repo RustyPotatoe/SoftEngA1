@@ -70,4 +70,17 @@ public class Course {
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
     }
+
+    public String getModulesToString(){
+        String returnString = "";
+        for (Module mods: modules) {
+            returnString += mods.toString();
+            returnString += "\n\t";
+        }
+        return returnString;
+    }
+
+    public String toString(){
+        return "Name: " + getName() + "\nStart Date: " + getStartDate() + "\nEnd Date: " + getEndDate() + "\nModules: \n\t" + getModulesToString();
+    }
 }

@@ -58,4 +58,17 @@ public class Module {
     public void addCourse(Course course){
         courses.add(course);
     }
+
+    public String getStudentsToString(){
+        String returnString = "";
+        for (Student stud: students ) {
+            returnString += stud.toString();
+            returnString += "\n\t";
+        }
+        return returnString;
+    }
+
+    public String toString(){
+        return "Name: " + getName() + "\nId: " + getId() + "\nStudents: \n\t" + getStudentsToString();
+    }
 }

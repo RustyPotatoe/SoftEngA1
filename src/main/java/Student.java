@@ -79,4 +79,9 @@ public class Student {
     public void addModule(Module module){
         modules.add(module);
     }
+
+    public String toString(){
+        return "Name: " + getName() + "\nID: " + getId() + "\nUserName: " + getUsername() + "\nDateOfBirth: " +
+                dateOfBirth + "\nAge: " + getAge();
+    }
 }

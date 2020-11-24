@@ -1,0 +1,16 @@
+## YAML Template.
+---
+language: java
+
+jdk: oraclejdk11
+
+before_install:
+  - mvn clean install
+
+after_success:
+  - mvn test
+
+notifications:
+  email:
+    recipients:
+     - r.oshea12@nuigalway.ie
